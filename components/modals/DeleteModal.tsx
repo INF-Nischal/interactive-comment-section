@@ -39,7 +39,7 @@ const DeleteModal = () => {
             <h1 className="text-xl font-bold">Delete Comment</h1>
             <p>
               Are you sure you want to delete this comment? This will remove the
-              comment and can't be undone.
+              comment and can&#39;t be undone.
             </p>
             <div className="flex justify-between">
               <button
