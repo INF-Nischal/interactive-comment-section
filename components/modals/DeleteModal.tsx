@@ -31,23 +31,31 @@ const DeleteModal = () => {
   const { showModal, handleModal } = useContext(ModalContext);
 
   return (
-    showModal && (
-      <div className="fixed top-0 h-screen w-screen flex justify-center items-center">
-        <div className="w-[360px] bg-white px-6 py-6 flex flex-col gap-2 rounded-lg">
-          <h1 className="text-xl">Delete Comment</h1>
-          <p>
-            Are you sure you want to delete this comment? This will remove the
-            comment and can't be undone.
-          </p>
-          <div className="flex justify-between">
-            <button className="border-2 px-4 py-1.5" onClick={handleModal}>
-              No, Cancel
-            </button>
-            <button className="border-2 px-4 py-1.5">Yes, Delete</button>
+    <>
+      {showModal && (
+        <div>
+          <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-50"></div>
+          <div className="fixed w-[90%] md:w-[25%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-6 flex flex-col gap-6 rounded-lg z-50">
+            <h1 className="text-xl font-bold">Delete Comment</h1>
+            <p>
+              Are you sure you want to delete this comment? This will remove the
+              comment and can't be undone.
+            </p>
+            <div className="flex justify-between">
+              <button
+                className="bg-grayish-blue uppercase rounded-md text-white px-4 py-1.5"
+                onClick={handleModal}
+              >
+                No, Cancel
+              </button>
+              <button className="bg-soft-red uppercase rounded-md text-white px-4 py-1.5">
+                Yes, Delete
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    )
+      )}
+    </>
   );
 };
 

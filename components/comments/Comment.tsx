@@ -46,7 +46,9 @@ export default function Comment({
                 width={24}
                 height={24}
               />
-              <p className="text-sm font-bold">{user?.username}</p>
+              <p className="text-sm font-bold text-grayish-blue">
+                {user?.username}
+              </p>
               {data.currentUser &&
               data.currentUser.username === user?.username ? (
                 <span className="bg-blue-500 text-slate-50 font-bold text-sm px-1">
