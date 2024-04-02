@@ -107,7 +107,7 @@ export default function Comment({
           {showEdit ? (
             <div className="flex flex-col gap-4">
               <textarea
-                className="w-full border-slate-400 border-2 rounded-lg h-[72px] px-4 py-2 resize-none focus:outline-moderate-blue text-sm"
+                className="w-full border-slate-400 border-2 rounded-lg h-[120px] px-4 py-2 resize-none focus:outline-moderate-blue text-sm"
                 value={editComment}
                 onChange={(e) => setEditComment(e.target.value)}
               ></textarea>

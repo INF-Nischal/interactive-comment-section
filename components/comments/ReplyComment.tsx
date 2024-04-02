@@ -15,7 +15,7 @@ export default function ReplyComment({ username }: TUser) {
   return (
     <div className="flex flex-col gap-5 bg-white rounded-lg p-4 mt-2">
       <textarea
-        className="w-full border-2 rounded-md h-[120px] px-4 py-2 resize-none focus:outline-moderate-blue text-sm placeholder:text-blue-300 md:hidden"
+        className="w-full border-2 rounded-md h-[72px] px-4 py-2 resize-none focus:outline-moderate-blue text-sm placeholder:text-blue-300 md:hidden"
         value={replyComment}
         onChange={(e) => {
           setReplyComment(e.target.value);
@@ -30,7 +30,7 @@ export default function ReplyComment({ username }: TUser) {
           className="h-[32px] w-[32px]"
         />
         <textarea
-          className="w-full border-2 rounded-md h-[120px] px-4 py-2 resize-none focus:outline-moderate-blue text-sm placeholder:text-blue-300 hidden md:block"
+          className="w-full border-2 rounded-md h-[72px] px-4 py-2 resize-none focus:outline-moderate-blue text-sm placeholder:text-blue-300 hidden md:block"
           value={replyComment}
           onChange={(e) => {
             setReplyComment(e.target.value);
