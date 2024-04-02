@@ -1,14 +1,14 @@
-export interface Comment {
+export interface TComment {
   id?: number;
   content: string;
   createdAt: string;
   score: number;
-  user?: User;
-  replies?: Reply[];
+  user?: TUser;
+  replies?: TReply[];
   replyingTo?: string;
 }
 
-export interface User {
+export interface TUser {
   image?: {
     png: string;
     webp: string;
@@ -16,11 +16,11 @@ export interface User {
   username?: string;
 }
 
-export interface Reply {
+export interface TReply {
   id?: number;
   content: string;
   createdAt: string;
   score: number;
   replyingTo: string;
-  user: User;
+  user: TUser;
 }

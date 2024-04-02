@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { User } from "@/types/commentTypes";
+import { TUser } from "@/types/commentTypes";
 import Image from "next/image";
 import data from "@/data.json";
 
-export default function ReplyComment({ username }: User) {
+export default function ReplyComment({ username }: TUser) {
   const [replyComment, setReplyComment] = useState<string>(
     "@" + username + " "
   );

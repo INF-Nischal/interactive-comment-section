@@ -2,7 +2,7 @@
 
 import { useState, useContext } from "react";
 import Image from "next/image";
-import { Comment } from "../../types/commentTypes";
+import { TComment } from "../../types/commentTypes";
 import ReplyComment from "./ReplyComment";
 import data from "../../data.json";
 import { ModalContext } from "../modals/DeleteModal";
@@ -16,7 +16,7 @@ export default function Comment({
   user,
   replies,
   replyingTo,
-}: Comment) {
+}: TComment) {
   const [showReply, setShowReply] = useState(true);
   const [showEdit, setShowEdit] = useState(false);
   const [editComment, setEditComment] = useState<string>("" + content);
